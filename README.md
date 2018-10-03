@@ -98,10 +98,12 @@ Link required repository to the ones in your $GOPATH:
 rm -rf ./src/flogo-opentracing-sample/vendor/github.com/debovema/flogo-contrib-models
 rm -rf ./src/flogo-opentracing-sample/vendor/github.com/TIBCOSoftware/flogo-contrib
 rm -rf ./src/flogo-opentracing-sample/vendor/github.com/TIBCOSoftware/flogo-lib
+rm -rf ./src/flogo-opentracing-sample/vendor/github.com/apache/thrift
 
 ln -s $GOPATH/src/github.com/debovema/flogo-contrib-models ./src/flogo-opentracing-sample/vendor/github.com/debovema/flogo-contrib-models
-ln -s $GOPATH/src/github.com/debovema/flogo-contrib-models ./src/flogo-opentracing-sample/vendor/github.com/TIBCOSoftware/flogo-contrib
-ln -s $GOPATH/src/github.com/debovema/flogo-contrib-models ./src/flogo-opentracing-sample/vendor/github.com/TIBCOSoftware/flogo-lib
+ln -s $GOPATH/src/github.com/TIBCOSoftware/flogo-contrib ./src/flogo-opentracing-sample/vendor/github.com/TIBCOSoftware/flogo-contrib
+ln -s $GOPATH/src/github.com/TIBCOSoftware/flogo-lib ./src/flogo-opentracing-sample/vendor/github.com/TIBCOSoftware/flogo-lib
+ln -s $GOPATH/src/github.com/apache/thrift ./src/flogo-opentracing-sample/vendor/github.com/apache/thrift
 ```
 
 Change the TIBCOSoftware contribs to the right remote and branch:
@@ -113,4 +115,6 @@ git -C $GOPATH/src/github.com/TIBCOSoftware/flogo-contrib pull origin working-da
 git -C $GOPATH/src/github.com/TIBCOSoftware/flogo-lib remote set-url origin https://github.com/debovema/flogo-lib.git
 git -C $GOPATH/src/github.com/TIBCOSoftware/flogo-lib config core.autocrlf input # fix for Windows
 git -C $GOPATH/src/github.com/TIBCOSoftware/flogo-lib pull origin working-data-between-flow-and-activities
+
+git -C $GOPATH/src/github.com/apache/thrift checkout master
 ```
