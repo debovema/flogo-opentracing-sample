@@ -3,7 +3,7 @@
 ## Clone this repository
 
 ```bash
-git clone https://debovema/flogo-opentracing-sample.git
+git clone https://github.com/debovema/flogo-opentracing-sample.git
 cd flogo-opentracing-sample
 ```
 
