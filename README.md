@@ -87,12 +87,17 @@ For Cygwin/Babun environment (Windows), first define:
 CYGWIN=winsymlinks:nativestrict
 ```
 
+Ensure the OpenTracing model for Flogo is imported in $GOPATH:
+```bash
+go get github.com/debovema/flogo-contrib-models/opentracing
+```
+
 Link required repository to the ones in your $GOPATH:
 
 ```bash
-rm -f ./src/flogo-opentracing-sample/vendor/github.com/debovema/flogo-contrib-models
-rm -f ./src/flogo-opentracing-sample/vendor/github.com/TIBCOSoftware/flogo-contrib
-rm -f ./src/flogo-opentracing-sample/vendor/github.com/TIBCOSoftware/flogo-lib
+rm -rf ./src/flogo-opentracing-sample/vendor/github.com/debovema/flogo-contrib-models
+rm -rf ./src/flogo-opentracing-sample/vendor/github.com/TIBCOSoftware/flogo-contrib
+rm -rf ./src/flogo-opentracing-sample/vendor/github.com/TIBCOSoftware/flogo-lib
 
 ln -s $GOPATH/src/github.com/debovema/flogo-contrib-models ./src/flogo-opentracing-sample/vendor/github.com/debovema/flogo-contrib-models
 ln -s $GOPATH/src/github.com/debovema/flogo-contrib-models ./src/flogo-opentracing-sample/vendor/github.com/TIBCOSoftware/flogo-contrib
@@ -102,8 +107,10 @@ ln -s $GOPATH/src/github.com/debovema/flogo-contrib-models ./src/flogo-opentraci
 Change the TIBCOSoftware contribs to the right remote and branch:
 ```bash
 git -C $GOPATH/src/github.com/TIBCOSoftware/flogo-contrib remote set-url origin https://github.com/debovema/flogo-contrib.git
+git -C $GOPATH/src/github.com/TIBCOSoftware/flogo-contrib config core.autocrlf input # fix for Windows
 git -C $GOPATH/src/github.com/TIBCOSoftware/flogo-contrib pull origin working-data-between-flow-and-activities
 
 git -C $GOPATH/src/github.com/TIBCOSoftware/flogo-lib remote set-url origin https://github.com/debovema/flogo-lib.git
+git -C $GOPATH/src/github.com/TIBCOSoftware/flogo-lib config core.autocrlf input # fix for Windows
 git -C $GOPATH/src/github.com/TIBCOSoftware/flogo-lib pull origin working-data-between-flow-and-activities
 ```
