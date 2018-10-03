@@ -77,3 +77,33 @@ curl http://127.0.0.1:9233/test
 ### Traces
 
 Results are available at http://127.0.0.1:9411/zipkin/ (change *127.0.0.1* with IP of Docker machine if necessary).
+
+## Development
+
+Here's another method to patch vendor which is more suitable for development.
+
+For Cygwin/Babun environment (Windows), first define:
+```bash
+CYGWIN=winsymlinks:nativestrict
+```
+
+Link required repository to the ones in your $GOPATH:
+
+```bash
+rm -f ./src/flogo-opentracing-sample/vendor/github.com/debovema/flogo-contrib-models
+rm -f ./src/flogo-opentracing-sample/vendor/github.com/TIBCOSoftware/flogo-contrib
+rm -f ./src/flogo-opentracing-sample/vendor/github.com/TIBCOSoftware/flogo-lib
+
+ln -s $GOPATH/src/github.com/debovema/flogo-contrib-models ./src/flogo-opentracing-sample/vendor/github.com/debovema/flogo-contrib-models
+ln -s $GOPATH/src/github.com/debovema/flogo-contrib-models ./src/flogo-opentracing-sample/vendor/github.com/TIBCOSoftware/flogo-contrib
+ln -s $GOPATH/src/github.com/debovema/flogo-contrib-models ./src/flogo-opentracing-sample/vendor/github.com/TIBCOSoftware/flogo-lib
+```
+
+Change the TIBCOSoftware contribs to the right remote and branch:
+```bash
+git -C $GOPATH/src/github.com/TIBCOSoftware/flogo-contrib remote set-url origin https://github.com/debovema/flogo-contrib.git
+git -C $GOPATH/src/github.com/TIBCOSoftware/flogo-contrib pull origin working-data-between-flow-and-activities
+
+git -C $GOPATH/src/github.com/TIBCOSoftware/flogo-lib remote set-url origin https://github.com/debovema/flogo-lib.git
+git -C $GOPATH/src/github.com/TIBCOSoftware/flogo-lib pull origin working-data-between-flow-and-activities
+```
