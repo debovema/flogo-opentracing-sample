@@ -18,7 +18,8 @@
   version = "v1.1.0"
 
 [[projects]]
-  digest = "1:beaa359a6a21ff38d89e6d1ac648a61997de9a5a5a152b3f22b0c071818a2e2c"
+  branch = "working-data-between-flow-and-activities"
+  digest = "1:40f4c2606eafe6b1fa25adf62866261a916dba3ae575e5c318f9a5d244a8242f"
   name = "github.com/TIBCOSoftware/flogo-contrib"
   packages = [
     "action/flow",
@@ -38,11 +39,12 @@
     "trigger/rest/cors",
   ]
   pruneopts = "T"
-  revision = "94000a231bc4dfc848492bba25d9ef92171cd445"
-  version = "v0.5.6"
+  revision = "a54183c35924726d1c0eb8e7011caa6079f90b3c"
+  source = "github.com/debovema/flogo-contrib"
 
 [[projects]]
-  digest = "1:c795750ff4c50bfea6bf43f819d03d50920e0b618bf55e58033f77ff84061418"
+  branch = "working-data-between-flow-and-activities"
+  digest = "1:7734b2950d49100fe51902cf255c491ace13731d9c31aee816793605ecc43f2f"
   name = "github.com/TIBCOSoftware/flogo-lib"
   packages = [
     "app",
@@ -81,16 +83,16 @@
     "util/managed",
   ]
   pruneopts = "T"
-  revision = "c80a5611b40f778c8b88a71f76609e843a2bfc1a"
-  version = "v0.5.6"
+  revision = "8dbd48d287acce32a51df9968303644396e106d2"
+  source = "github.com/debovema/flogo-lib"
 
 [[projects]]
-  digest = "1:985dd14af8643801119ce8b3ed73efc85f2a2dd99ff588cf4efea6a040435d50"
+  branch = "master"
+  digest = "1:96ffedc334347786946249e84123e700c8edb2fa7b4648667b7fadcfcf122a5d"
   name = "github.com/apache/thrift"
   packages = ["lib/go/thrift"]
   pruneopts = "T"
-  revision = "327ebb6c2b6df8bf075da02ef45a2a034e9b79ba"
-  version = "0.11.0"
+  revision = "031f57122f26656ce79c8d5dfe0a0822938afdb5"
 
 [[projects]]
   branch = "master"
@@ -110,7 +112,7 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:1673ed70cd7a3b289ead8b0b13a262284fc807d6cd11149fd067546b3323b2a9"
+  digest = "1:bb4ed9ca2544791ab35389460af92b70e8231a21f92fc73c7101cc0fb72681f7"
   name = "github.com/debovema/flogo-contrib-models"
   packages = [
     "opentracing",
@@ -118,7 +120,7 @@
     "opentracing/utils",
   ]
   pruneopts = "T"
-  revision = "a2731234ee05293562f059f6492aa7a4f2738669"
+  revision = "cc04956f293640f290933bd951c69ea5b225c35f"
 
 [[projects]]
   digest = "1:bd6e6dc5db19ccd7c2356a86e180960f266ed12be1a58ffba88c3399ce205781"
@@ -312,22 +314,22 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:b3d18cdeba3ba2a0812fd0cc6a2432da37f36b525606e5b7ba565a46a94d54aa"
+  digest = "1:7d604af900dd246a02cd599018b44859c5335406463037b42e6aa7437a77865e"
   name = "golang.org/x/net"
   packages = ["context"]
   pruneopts = "T"
-  revision = "f5e5bdd778241bfefa8627f7124c39cd6ad8d74f"
+  revision = "68fc911561ed0cb104e22deafa05515909b706ab"
 
 [[projects]]
   branch = "master"
-  digest = "1:0623e21a3cd012fa66cbdf084324300ed85f746e24f92ebe002559facfc02bef"
+  digest = "1:54580c2fb6ca39ef8f6b7e75c725a26285294fa56909a1ff9f09460016c8404a"
   name = "golang.org/x/sys"
   packages = [
     "unix",
     "windows",
   ]
   pruneopts = "T"
-  revision = "e4b3c5e9061176387e7cea65e4dc5853801f3fb7"
+  revision = "8469e314837c2e2471561de5c47bbf8bfd0d9099"
 
 [solve-meta]
   analyzer-name = "dep"
