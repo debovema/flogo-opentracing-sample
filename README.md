@@ -1,4 +1,4 @@
-# Sample for Flogo OpenTracing model
+# Sample for Flogo OpenTracing listener
 
 ## Getting started
 
