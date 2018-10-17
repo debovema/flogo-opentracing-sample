@@ -35,22 +35,33 @@
         "name": "SampleFlow",
         "tasks": [
           {
-            "id": "log_2",
+            "id": "log_1",
             "name": "Log Message",
             "description": "Simple Log Activity",
             "activity": {
               "ref": "github.com/TIBCOSoftware/flogo-contrib/activity/log",
               "input": {
-                "message": "Simple Log",
+                "message": "first log",
                 "flowInfo": "false",
                 "addToFlow": "false"
               }
             }
           },
           {
-            "id": "log_3",
+            "id": "sleep_1",
+            "name": "Sleep",
+            "description": "Sleep Activity",
+            "activity": {
+              "ref": "github.com/square-it/flogo-contrib-activities/sleep",
+              "input": {
+                "duration": "5s"
+              }
+            }
+          },
+          {
+            "id": "log_2",
             "type": "iterator",
-            "name": "Log Message (2)",
+            "name": "Log in a loop",
             "description": "Simple Log Activity",
             "settings": {
               "iterate": "2"
@@ -60,26 +71,29 @@
               "input": {
                 "flowInfo": "false",
                 "addToFlow": "false"
-              },
-              "mappings": {
-                "input": [
-                  {
-                    "type": "assign",
-                    "value": "$current.iteration.value",
-                    "mapTo": "message"
-                  }
-                ]
               }
+            },
+            "mappings": {
+              "input": [
+                {
+                  "type": "assign",
+                  "value": "$current.iteration.value",
+                  "mapTo": "message"
+                }
+              ]
             }
           }
         ],
         "links": [
           {
-            "from": "log_2",
-            "to": "log_3"
+            "from": "log_1",
+            "to": "sleep_1"
+          },
+          {
+            "from": "sleep_1",
+            "to": "log_2"
           }
-        ],
-        "model": "opentracing-model"
+        ]
       }
     }
   ]

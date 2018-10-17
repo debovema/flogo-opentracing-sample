@@ -1,24 +1,22 @@
-# Gopkg.toml example
-#
-# Refer to https://golang.github.io/dep/docs/Gopkg.toml.html
-# for detailed Gopkg.toml documentation.
-		
 [prune]
   go-tests = true
-  
-[[constraint]]
-  branch = "master"
-  name = "github.com/debovema/flogo-contrib-models"
 
 [[constraint]]
   name = "github.com/TIBCOSoftware/flogo-contrib"
-  branch = "working-data-between-flow-and-activities"
-  source = "github.com/debovema/flogo-contrib"
+  branch = "flow-audit-events"
 
 [[constraint]]
   name = "github.com/TIBCOSoftware/flogo-lib"
-  branch = "working-data-between-flow-and-activities"
-  source = "github.com/debovema/flogo-lib"
+  branch = "event-handler-support"
+
+[[constraint]]
+  name = "github.com/debovema/flogo-opentracing-listener"
+  branch = "master"
+
+[[constraint]]
+  name = "github.com/square-it/flogo-contrib-activities"
+  branch = "sleep"
+  source = "github.com/debovema/flogo-contrib-activities"
 
 [[override]]
   name = "github.com/apache/thrift"
