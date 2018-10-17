@@ -71,16 +71,16 @@
               "input": {
                 "flowInfo": "false",
                 "addToFlow": "false"
+              },
+              "mappings": {
+                "input": [
+                  {
+                    "type": "assign",
+                    "value": "$current.iteration.value",
+                    "mapTo": "message"
+                  }
+                ]
               }
-            },
-            "mappings": {
-              "input": [
-                {
-                  "type": "assign",
-                  "value": "$current.iteration.value",
-                  "mapTo": "message"
-                }
-              ]
             }
           }
         ],
