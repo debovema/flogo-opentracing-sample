@@ -11,11 +11,12 @@
 
 [[projects]]
   branch = "flow-audit-events"
-  digest = "1:33036fb01d7b37839fc25968a3663dd9307bca34841c941bb71ef6edbbe77281"
+  digest = "1:94f21adda0a1509d1b76c41163bafcb23a07e296c4a65ec4bdff059f223fe0fc"
   name = "github.com/TIBCOSoftware/flogo-contrib"
   packages = [
     "action/flow",
     "action/flow/definition",
+    "action/flow/event",
     "action/flow/instance",
     "action/flow/linker",
     "action/flow/model",
@@ -31,11 +32,11 @@
     "trigger/rest/cors",
   ]
   pruneopts = "T"
-  revision = "e88f7e0201dc2e0a79a4386a0b6ac07fb12c5aea"
+  revision = "3bda0aa7eaa14febaf3d9507fc841cee3fffb8fb"
 
 [[projects]]
   branch = "event-handler-support"
-  digest = "1:9102e1e4edab0eb4aa7a2cadd04bc26294c2ef656ce8f802deac91291b808d2d"
+  digest = "1:cce9300b7f1530c8cc341686d026aa95d526c78cce91d64f79b196b983aca072"
   name = "github.com/TIBCOSoftware/flogo-lib"
   packages = [
     "app",
@@ -44,7 +45,7 @@
     "core/action",
     "core/activity",
     "core/data",
-    "core/events",
+    "core/event",
     "core/mapper",
     "core/mapper/assign",
     "core/mapper/exprmapper",
@@ -76,15 +77,15 @@
     "util/managed",
   ]
   pruneopts = "T"
-  revision = "24e44ee8550f8b4fc2d68498c84085e915ae4825"
+  revision = "bd167d68f72f3642a352454b2041a17b6fe9bcb3"
 
 [[projects]]
   branch = "master"
-  digest = "1:b74250278be9635acb9f9bf047cc8657b428c6a0fd9c7e1a645f7874ae2c587e"
+  digest = "1:04e6f7a93e3209dc48f4b73dcbb846096c48140901129cbe2de3537af255f407"
   name = "github.com/apache/thrift"
   packages = ["lib/go/thrift"]
   pruneopts = "T"
-  revision = "7a51220c02d31c831e446906784836e9b3cd53b6"
+  revision = "8a130f63e5bd09e5c39f9760ba04b5ea0837ff4c"
 
 [[projects]]
   branch = "master"
@@ -104,11 +105,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:b80a4cec9e07db52ced28b1659b7565ca4aff36b23aaf319d024dd39ded16841"
+  digest = "1:221b3831ec27cfaf13519a46b028c2df88a981c047d49b9582dafef778f273de"
   name = "github.com/debovema/flogo-opentracing-listener"
   packages = ["."]
   pruneopts = "T"
-  revision = "9daa3aac5e22f3cf2102db02c03689e701365d84"
+  revision = "85060b25d35e8b14ada3aaf93c2d4a111c9c6e91"
 
 [[projects]]
   digest = "1:bd6e6dc5db19ccd7c2356a86e180960f266ed12be1a58ffba88c3399ce205781"
@@ -299,11 +300,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:7af83e18e72aae0cc57d28c8c441654695491af7c58df20ac3af43b500f651a8"
+  digest = "1:1244f7fbc53a2b9c4174e7e1e62ed5cad5f2f42c67abeac2400a7a72c6c76643"
   name = "golang.org/x/net"
   packages = ["context"]
   pruneopts = "T"
-  revision = "49bb7cea24b1df9410e1712aa6433dae904ff66a"
+  revision = "04a2e542c03f1d053ab3e4d6e5abcd4b66e2be8e"
 
 [[projects]]
   branch = "master"
