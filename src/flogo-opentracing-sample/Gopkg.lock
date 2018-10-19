@@ -10,8 +10,8 @@
   version = "v1.19.0"
 
 [[projects]]
-  branch = "flow-audit-events"
-  digest = "1:94f21adda0a1509d1b76c41163bafcb23a07e296c4a65ec4bdff059f223fe0fc"
+  branch = "master"
+  digest = "1:a3dc6cab4b3cc5e3a75f41b99b25a441138887ca26e5cea98544f6c480df62bc"
   name = "github.com/TIBCOSoftware/flogo-contrib"
   packages = [
     "action/flow",
@@ -32,11 +32,11 @@
     "trigger/rest/cors",
   ]
   pruneopts = "T"
-  revision = "3bda0aa7eaa14febaf3d9507fc841cee3fffb8fb"
+  revision = "6968ae317d9decb89152a4e61c5e15249244c658"
 
 [[projects]]
-  branch = "event-handler-support"
-  digest = "1:cce9300b7f1530c8cc341686d026aa95d526c78cce91d64f79b196b983aca072"
+  branch = "master"
+  digest = "1:5b0a4b2ab6cfe7f6112f65d16b13837a64ce5f50f96d04b9d8c587fbb6c901b5"
   name = "github.com/TIBCOSoftware/flogo-lib"
   packages = [
     "app",
@@ -77,15 +77,15 @@
     "util/managed",
   ]
   pruneopts = "T"
-  revision = "bd167d68f72f3642a352454b2041a17b6fe9bcb3"
+  revision = "e41193f633ccf7e9997e4d4a141291ea70356404"
 
 [[projects]]
   branch = "master"
-  digest = "1:04e6f7a93e3209dc48f4b73dcbb846096c48140901129cbe2de3537af255f407"
+  digest = "1:681883b9a134e76058ce271a00d4d28cab623eb4262e25998ac17c8d22a51da0"
   name = "github.com/apache/thrift"
   packages = ["lib/go/thrift"]
   pruneopts = "T"
-  revision = "8a130f63e5bd09e5c39f9760ba04b5ea0837ff4c"
+  revision = "9ee29516c419b7eaa95ed89a93b135ea1c683576"
 
 [[projects]]
   branch = "master"
@@ -105,11 +105,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:221b3831ec27cfaf13519a46b028c2df88a981c047d49b9582dafef778f273de"
+  digest = "1:3b64a69a60697708c55defce18d30bcf23cc5ead0e794a1e59372263c72ce22b"
   name = "github.com/debovema/flogo-opentracing-listener"
   packages = ["."]
   pruneopts = "T"
-  revision = "85060b25d35e8b14ada3aaf93c2d4a111c9c6e91"
+  revision = "63ee2f57442cd64792bf193e2ba35fecad112b4e"
 
 [[projects]]
   digest = "1:bd6e6dc5db19ccd7c2356a86e180960f266ed12be1a58ffba88c3399ce205781"
@@ -308,14 +308,14 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:bfd82e5d371481eff9c9653181f398061479c35bc3be2a5bd5f017c9c8b5c894"
+  digest = "1:62d9d14cfc2ba8d2388690b7845fbb0f3bc6534350e56e921ea630e29aa60673"
   name = "golang.org/x/sys"
   packages = [
     "unix",
     "windows",
   ]
   pruneopts = "T"
-  revision = "fa43e7bc11baaae89f3f902b2b4d832b68234844"
+  revision = "8f1d3d21f81be6e86ebcd6febee89c89bc50719f"
 
 [solve-meta]
   analyzer-name = "dep"

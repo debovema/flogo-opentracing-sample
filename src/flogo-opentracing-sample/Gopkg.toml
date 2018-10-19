@@ -2,14 +2,6 @@
   go-tests = true
 
 [[constraint]]
-  name = "github.com/TIBCOSoftware/flogo-contrib"
-  branch = "flow-audit-events"
-
-[[constraint]]
-  name = "github.com/TIBCOSoftware/flogo-lib"
-  branch = "event-handler-support"
-
-[[constraint]]
   name = "github.com/debovema/flogo-opentracing-listener"
   branch = "master"
 
@@ -17,7 +9,3 @@
   name = "github.com/square-it/flogo-contrib-activities"
   branch = "sleep"
   source = "github.com/debovema/flogo-contrib-activities"
-
-[[override]]
-  name = "github.com/apache/thrift"
-  branch = "master"
