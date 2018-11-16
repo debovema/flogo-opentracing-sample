@@ -1,11 +1,3 @@
 [prune]
   go-tests = true
 
-[[constraint]]
-  name = "github.com/debovema/flogo-opentracing-listener"
-  branch = "master"
-
-[[constraint]]
-  name = "github.com/square-it/flogo-contrib-activities"
-  branch = "sleep"
-  source = "github.com/debovema/flogo-contrib-activities"

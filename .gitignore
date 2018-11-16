@@ -1,4 +1,6 @@
-bin
-pkg
+bin/
+pkg/
+src/flogo-opentracing-sample/embeddedapp.go
+
 **/.idea
 **/vendor

@@ -10,8 +10,7 @@
   version = "v1.19.0"
 
 [[projects]]
-  branch = "master"
-  digest = "1:a3dc6cab4b3cc5e3a75f41b99b25a441138887ca26e5cea98544f6c480df62bc"
+  digest = "1:63af90669214d42279a26f7297fc0852126543a59b10f650713a9209d813183d"
   name = "github.com/TIBCOSoftware/flogo-contrib"
   packages = [
     "action/flow",
@@ -32,11 +31,11 @@
     "trigger/rest/cors",
   ]
   pruneopts = "T"
-  revision = "6968ae317d9decb89152a4e61c5e15249244c658"
+  revision = "2b1364a2a6af89175483b690bf6f7839e673257f"
+  version = "v0.5.7"
 
 [[projects]]
-  branch = "master"
-  digest = "1:5b0a4b2ab6cfe7f6112f65d16b13837a64ce5f50f96d04b9d8c587fbb6c901b5"
+  digest = "1:17d04943a0ccecce3d4547d8acb6c95dc84796ec3b60ad49da240169b67d8bd4"
   name = "github.com/TIBCOSoftware/flogo-lib"
   packages = [
     "app",
@@ -77,15 +76,16 @@
     "util/managed",
   ]
   pruneopts = "T"
-  revision = "e41193f633ccf7e9997e4d4a141291ea70356404"
+  revision = "7f1e2d29362432df0d563e2984b2de2ce450a1a1"
+  version = "v0.5.7"
 
 [[projects]]
   branch = "master"
-  digest = "1:681883b9a134e76058ce271a00d4d28cab623eb4262e25998ac17c8d22a51da0"
+  digest = "1:5e006db52c9682bda1318c177aa915a22382aa20fe210d927562245c312f9012"
   name = "github.com/apache/thrift"
   packages = ["lib/go/thrift"]
   pruneopts = "T"
-  revision = "9ee29516c419b7eaa95ed89a93b135ea1c683576"
+  revision = "24918abba929282d6e405fedbc2ef68c3e894136"
 
 [[projects]]
   branch = "master"
@@ -102,14 +102,6 @@
   pruneopts = "T"
   revision = "8991bc29aa16c548c550c7ff78260e27b9ab7c73"
   version = "v1.1.1"
-
-[[projects]]
-  branch = "master"
-  digest = "1:3b64a69a60697708c55defce18d30bcf23cc5ead0e794a1e59372263c72ce22b"
-  name = "github.com/debovema/flogo-opentracing-listener"
-  packages = ["."]
-  pruneopts = "T"
-  revision = "63ee2f57442cd64792bf193e2ba35fecad112b4e"
 
 [[projects]]
   digest = "1:bd6e6dc5db19ccd7c2356a86e180960f266ed12be1a58ffba88c3399ce205781"
@@ -161,11 +153,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:876644f4db08f0e3dc763be71dc0ceba0faf605ad5ebac4bade6dd126a6adc43"
+  digest = "1:382c217b79183394daf575d58bb5cb4a4626a92a278e1ed65c78a4a45e0f4bf6"
   name = "github.com/julienschmidt/httprouter"
   packages = ["."]
   pruneopts = "T"
-  revision = "606cda683640239cd05e3de6034756296adbf01d"
+  revision = "26a05976f9bf5c3aa992cc20e8588c359418ee58"
 
 [[projects]]
   digest = "1:0a69a1c0db3591fcefb47f115b224592c8dfa4368b7ba9fae509d5e16cdc95c8"
@@ -245,21 +237,28 @@
   revision = "3113b8401b8a98917cde58f8bbd42a1b1c03b1fd"
 
 [[projects]]
-  digest = "1:179d773c37dd1f70f26c946e6a45e2972da05e032b90db1cf3279b9625756d2e"
+  digest = "1:a204f9aa04d3305be0d4d8f69f42aee6c649a8f9f9a8dbbbaff54bdad5ce50c7"
   name = "github.com/sirupsen/logrus"
   packages = ["."]
   pruneopts = "T"
-  revision = "ad15b42461921f1fb3529b058c6786c6a45d5162"
-  version = "v1.1.1"
+  revision = "bcd833dfe83d3cebad139e4a29ed79cb2318bf95"
+  version = "v1.2.0"
 
 [[projects]]
-  branch = "sleep"
-  digest = "1:e7fb52151502b09f8fbffdcfcab53e21298749e5589c639659973c5b3f34a929"
+  digest = "1:5bcd1c76c25ca9d8467dcd1426c474f29b539a9fc80a001a1742d396bf61ec35"
   name = "github.com/square-it/flogo-contrib-activities"
   packages = ["sleep"]
   pruneopts = "T"
-  revision = "b9dee218a352ae053c336d08f97e758c238bcef6"
-  source = "github.com/debovema/flogo-contrib-activities"
+  revision = "4e9ac86c5fa92c9951d4163226fc938bc1677d9a"
+  version = "v0.0.1"
+
+[[projects]]
+  digest = "1:0d7ae9b648ee8a634114585e6a4d0a2b86ec176c9979b38fbb34a32f082666a7"
+  name = "github.com/square-it/flogo-opentracing-listener"
+  packages = ["."]
+  pruneopts = "T"
+  revision = "1dc61f0f3ce87d66c2bef5b4d69c28fdea7b3463"
+  version = "v0.0.1"
 
 [[projects]]
   digest = "1:330d573e39e55db7e74464600a46fefddff5d7cfd7e53d395cf1c5754302218c"
@@ -291,31 +290,62 @@
   version = "v1.5.0"
 
 [[projects]]
+  digest = "1:365b8ecb35a5faf5aa0ee8d798548fc9cd4200cb95d77a5b0b285ac881bae499"
+  name = "go.uber.org/atomic"
+  packages = ["."]
+  pruneopts = "T"
+  revision = "1ea20fb1cbb1cc08cbd0d913a96dead89aa18289"
+  version = "v1.3.2"
+
+[[projects]]
+  digest = "1:8da5d356e645cc806b953f35966e9185e9f3817c6cee54f9b33ca602544ee434"
+  name = "go.uber.org/multierr"
+  packages = ["."]
+  pruneopts = "T"
+  revision = "3c4937480c32f4c13a875a1829af76c98ca3d40a"
+  version = "v1.1.0"
+
+[[projects]]
+  digest = "1:c57d4b95825e74f8eb3b0c851d04aac3626a602de613f8702c0de41de26856b6"
+  name = "go.uber.org/zap"
+  packages = [
+    ".",
+    "buffer",
+    "internal/bufferpool",
+    "internal/color",
+    "internal/exit",
+    "zapcore",
+  ]
+  pruneopts = "T"
+  revision = "ff33455a0e382e8a81d14dd7c922020b6b5e7982"
+  version = "v1.9.1"
+
+[[projects]]
   branch = "master"
-  digest = "1:56a43b9f51e5c5ea734e866b82d57c842b022c795a0611ff5f57f3d7c47de45d"
+  digest = "1:0550efca924537365fba757950ae7b6ec8c11f018b5c2d6a189ac9a2af0f1ba7"
   name = "golang.org/x/crypto"
   packages = ["ssh/terminal"]
   pruneopts = "T"
-  revision = "0c41d7ab0a0ee717d4590a44bcb987dfd9e183eb"
+  revision = "3d3f9f413869b949e48070b5bc593aa22cc2b8f2"
 
 [[projects]]
   branch = "master"
-  digest = "1:1244f7fbc53a2b9c4174e7e1e62ed5cad5f2f42c67abeac2400a7a72c6c76643"
+  digest = "1:a92d7dd2268883d2d466576cb7319cc5321c906d853da4b4ac1ffc407895f809"
   name = "golang.org/x/net"
   packages = ["context"]
   pruneopts = "T"
-  revision = "04a2e542c03f1d053ab3e4d6e5abcd4b66e2be8e"
+  revision = "adae6a3d119ae4890b46832a2e88a95adc62b8e7"
 
 [[projects]]
   branch = "master"
-  digest = "1:62d9d14cfc2ba8d2388690b7845fbb0f3bc6534350e56e921ea630e29aa60673"
+  digest = "1:e9cba1cd1f1ea4efdb2edc64aca25d4a7e58d2b28a7d9f6af37e993a99de51a4"
   name = "golang.org/x/sys"
   packages = [
     "unix",
     "windows",
   ]
   pruneopts = "T"
-  revision = "8f1d3d21f81be6e86ebcd6febee89c89bc50719f"
+  revision = "5ac8a444bdc56cee774f8f2b3382156bd27c63c3"
 
 [solve-meta]
   analyzer-name = "dep"
@@ -327,8 +357,8 @@
     "github.com/TIBCOSoftware/flogo-lib/app",
     "github.com/TIBCOSoftware/flogo-lib/engine",
     "github.com/TIBCOSoftware/flogo-lib/logger",
-    "github.com/debovema/flogo-opentracing-listener",
     "github.com/square-it/flogo-contrib-activities/sleep",
+    "github.com/square-it/flogo-opentracing-listener",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
