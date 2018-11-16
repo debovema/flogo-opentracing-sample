@@ -1,7 +1,7 @@
 {
   "name": "flogo-opentracing-sample",
   "type": "flogo:app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "appModel": "1.0.0",
   "triggers": [
     {
